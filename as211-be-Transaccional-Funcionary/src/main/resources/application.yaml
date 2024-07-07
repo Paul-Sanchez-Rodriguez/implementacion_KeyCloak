@@ -1,0 +1,33 @@
+#----------------------------------------------------------------------------------------------------------------------#
+
+# Conexion a la Base de Datos en local (PostgreSQL)
+
+
+
+
+#----------------------------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------------------#
+
+# Conexion a la Base de Datos en local (PostgreSQL)
+server:
+  port: 8080
+
+spring:
+  r2dbc:
+    url: r2dbc:postgres://localhost:5432/db_Funcionary_Teen
+    username: postgres
+    password: admin
+  pool:
+    initial-size: 5
+    max-size: 20
+  application:
+    name: transaccionalFuncioanry-service
+#----------------------------------------------------------------------------------------------------------------------#
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+  instance:
+    preferIpAddress: true
+    hostName: 192.168.43.77

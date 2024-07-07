@@ -1,0 +1,10 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(“„‹¿
+‚
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(“„‹¿
+T
+java:S1612!">Replace this lambda with method reference 'CsrfSpec::disable'.(÷ÃÆâ
+M
+java:S1611""7Remove the parentheses around the "authorize" parameter(ßª À
+R
+java:S1611%"<Remove the parentheses around the "resourceServer" parameter(õìÌš

@@ -1,0 +1,26 @@
+#----------------------------------------------------------------------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------------------#
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  r2dbc:
+    url: r2dbc:postgres://localhost:5432/db_Activities
+    username: postgres
+    password: admin
+  pool:
+    initial-size: 5
+    max-size: 20
+  application:
+    name: activities-service
+
+server:
+  port: 8083
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+  instance:
+    preferIpAddress: true
+    hostName: 192.168.43.77

@@ -1,0 +1,8 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(€ñ»Â8Š³þú¾1
+T
+java:S1611*"7Remove the parentheses around the "authorize" parameter(ßª À8œ³þú¾1
+Y
+java:S1611/"<Remove the parentheses around the "resourceServer" parameter(õìÌš8œ³þú¾1
+m
+java:S1128"KRemove this unused import 'org.springframework.security.config.Customizer'.(Ïóœ¬ùÿÿÿÿ8¡³þú¾1

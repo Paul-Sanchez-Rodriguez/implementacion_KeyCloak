@@ -1,0 +1,25 @@
+
+b	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(“„‹¿8ùê“¿1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÿ§ÏÊ8ûê“¿1
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(“„‹¿8ê“¿1
+[
+java:S1612">Replace this lambda with method reference 'CsrfSpec::disable'.(÷ÃÆâ8ê“¿1
+T
+java:S1611"7Remove the parentheses around the "authorize" parameter(ßª À8ê“¿1
+Y
+java:S1611"<Remove the parentheses around the "resourceServer" parameter(õìÌš8‘ê“¿1
+
+java:S1128"{Remove this unused import 'org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties'.(¤ÿ£²ûÿÿÿÿ8ú“¿1
+|
+java:S1128"ZRemove this unused import 'org.springframework.security.oauth2.core.OAuth2TokenValidator'.(˜¾¥Àøÿÿÿÿ8Éë÷“¿1
+o
+java:S1128"RRemove this unused import 'org.springframework.security.oauth2.jwt.JwtValidators'.(›²œ8Éë÷“¿1
+
+java:S1128"]Remove this unused import 'org.springframework.security.oauth2.jwt.NimbusReactiveJwtDecoder'.(§ÊËÙúÿÿÿÿ8Éë÷“¿1
+t
+java:S1128"WRemove this unused import 'org.springframework.security.oauth2.jwt.ReactiveJwtDecoder'.(ËĞÜÎ8Éë÷“¿1
+y
+java:S1128"WRemove this unused import 'org.springframework.web.reactive.function.client.WebClient'.(¬à•ıÿÿÿÿ8Éë÷“¿1
+d
+java:S1128"HRemove this unused import 'org.springframework.security.oauth2.jwt.Jwt'.(’¹•98Éë÷“¿1

@@ -1,0 +1,20 @@
+
+spring:
+  application:
+    name: identity-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/PRS
+
+server:
+  port: 8093
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka
+  instance:
+    preferIpAddress: true
+    hostName: 192.168.43.77

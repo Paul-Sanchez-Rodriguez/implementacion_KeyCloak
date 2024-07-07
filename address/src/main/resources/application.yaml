@@ -1,0 +1,29 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/db_address
+    username: postgres
+    password: admin
+  pool:
+      initial-size: 5
+      max-size: 20
+  application:
+      name: address-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/PRS
+
+server:
+  port: 8092
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+  instance:
+    preferIpAddress: true
+    hostName: 192.168.43.77

@@ -1,0 +1,71 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8099/eureka/
+  instance:
+    preferIpAddress: true
+    hostName: 192.168.43.77
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: '*'
+      routes:
+        - id: address-service
+          uri: lb://address-SERVICE
+          predicates:
+            - Path=/v1/address**
+
+        - id: identity-service
+          uri: lb://identity-SERVICE
+          predicates:
+            - Path=/user/**
+
+        - id: actividadDetalle-service
+          uri: lb://actividadDetalle-SERVICE
+          predicates:
+            - Path=/api/transaccionalData/**
+
+        - id: transaccionalFuncioanry-service
+          uri: lb://transaccionalFuncioanry-SERVICE
+          predicates:
+            - Path=/api/transaccionalFuncionary/**
+
+        - id: attendance-service
+          uri: lb://attendance-SERVICE
+          predicates:
+            - Path=/v1/attendance/**
+
+        - id: activities-service
+          uri: lb://activities-SERVICE
+          predicates:
+            - Path=/ms-soa/**
+
+        - id: funcionary-service
+          uri: lb://funcionary-SERVICE
+          predicates:
+            - Path=/api/funcionaryData/**
+
+        - id: teen-service
+          uri: lb://teen-SERVICE
+          predicates:
+            - Path=/api/teenData/**
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8090/realms/PRS
+
+logging:
+  level:
+    org.springframework: DEBUG

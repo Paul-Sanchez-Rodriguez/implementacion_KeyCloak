@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/address/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway-service/pom.xml" />
+        <option value="$PROJECT_DIR$/identity-service/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-ActividadDetalle/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-Activities/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-attendance/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-Funcionary/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-Teen/pom.xml" />
+        <option value="$PROJECT_DIR$/as211-be-Transaccional-Funcionary/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
